@@ -1,3 +1,4 @@
+import 'package:favorite_places_app/widgets/image_input.dart';
 import 'package:flutter/material.dart';
 
 import 'package:favorite_places_app/providers/user_places.dart';
@@ -46,6 +47,9 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
               controller: _titleController,
               style: TextStyle(color: Theme.of(context).colorScheme.onSurface),
             ),
+            // Image Input
+            const SizedBox(height: 10),
+            ImageInput(),
             const SizedBox(height: 16),
             ElevatedButton.icon(
               onPressed: _savePlace,
